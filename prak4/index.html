@@ -14,10 +14,10 @@
 
 <body>
     <div class="dark_lightmode">
-        <img src="moon-icon.svg" id="icon" alt="icon">
+        <img src="sun-svgrepo-com.svg" id="icon" alt="icon">
     </div>
     <header>
-        <img src="1.jpeg" alt="pokemon" width="150" height="150">
+        <img src="foto-profil.jpeg" alt="pokemon" width="150" height="150">
         <section>
             <h1>Hay, saya Krisna Saputra</h1>
             <p>Software Engineer</p>
@@ -33,25 +33,27 @@
     </nav>
 
     <main>
-        <h2 id="tentangsaya">Tentang saya</h2>
         <div class="content-pertama">
-            <div class="subcontent-pertama">
-                <p>Saya seorang mahasiswa yang berkuliah di Institut Teknologi Sumatera dengan prodi Teknik Informatika.
-                    Saya memiliki hobbi sepak bola dan badminton.Saya memiliki impian untuk menjadi kaya dan saya senang
-                    dengan aktivitas programming seperti pengembangan web</p>
+            <h2 id="tentangsaya">Tentang saya</h2>
+            <div class="subcontent">
+                <div class="subcontent-pertama">
+                    <p>Saya seorang mahasiswa yang berkuliah di Institut Teknologi Sumatera dengan prodi Teknik
+                        Informatika.
+                        Saya memiliki hobbi sepak bola dan badminton.Saya memiliki impian untuk menjadi kaya dan saya
+                        senang
+                        dengan aktivitas programming seperti pengembangan web</p>
+                </div>
+
+                <div class="subcontent-kedua">
+                    <iframe width="420" height="230" src="https://www.youtube.com/embed/cIIxPiCWId0">
+                    </iframe>
+                </div>
             </div>
 
-            <section class="subcontent-kedua">
-                <figure>
-                    <iframe src="https://www.youtube.com/embed/cIIxPiCWId0">
-                    </iframe>
-                    <figcaption>Video pendek</figcaption>
-                </figure>
-            </section>
         </div>
 
-        <h2 id="pengalamankerja">Pengalaman kerja</h2>
-        <div>
+        <div class="content-kedua">
+            <h2 id="pengalamankerja">Pengalaman kerja</h2>
             <table border="1">
                 <thead>
                     <tr>
@@ -83,13 +85,14 @@
                 </tbody>
             </table>
         </div>
-        <h2 id="hubungisaya">Hubungi saya</h2>
-        <div>
+        <div class="content-ketiga">
+            <h2 id="hubungisaya">Hubungi saya</h2>
             <form action="#">
                 <p>
                     <label for="nama">Nama :</label>
                     <input type="text" id="nama" name="nama">
                 </p>
+
                 <p>
                     <label for="tanya">Sudah nonton film saya?</label>
                     <br>
@@ -112,7 +115,6 @@
     <footer>
         Copyright by Krisna Saputra 😎
     </footer>
-
     <script src="script.js"></script>
 </body>
 
