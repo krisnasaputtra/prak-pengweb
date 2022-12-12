@@ -6,75 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan 1 | Praktikum Pengweb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="dark_lightmode">
+        <img src="moon-icon.svg" id="icon" alt="icon">
+    </div>
     <header>
-        <img src="pokemon.png" alt="pokemon" width="200px" height="200px">
+        <img src="1.jpeg" alt="pokemon" width="150" height="150">
         <section>
-            <h1>Hay, saya Pikachu</h1>
-            <p>Saya seorang pokemon listrik</p>
+            <h1>Hay, saya Krisna Saputra</h1>
+            <p>Software Engineer</p>
         </section>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#tentangsaya">tentang saya</a></li>
-            <li><a href="#pengalamankerja">pengalaman kerja</a></li>
-            <li><a href="#hubungisaya">hubungi saya</a></li>
+            <li><a href="#tentangsaya">Tentang saya</a></li>
+            <li><a href="#pengalamankerja">Pengalaman kerja</a></li>
+            <li><a href="#hubungisaya">Hubungi saya</a></li>
         </ul>
     </nav>
 
     <main>
-        <div>
-            <h2 id="tentangsaya">tentang saya</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a saepe maxime ipsam, autem ex optio
-                provident itaque impedit, quis culpa esse distinctio dicta asperiores placeat eius laborum numquam
-                consequuntur quod voluptate enim reiciendis! Consectetur officia doloribus similique molestiae
-                temporibus quibusdam explicabo perspiciatis fuga odit ex ipsa, laborum, saepe eligendi, nobis mollitia
-                odio earum. Blanditiis voluptatum maxime nobis animi recusandae reprehenderit ipsam, earum fugit omnis
-                molestias dolor, in reiciendis corporis vitae aliquid quos, sint ducimus nesciunt aspernatur voluptate
-                asperiores eaque suscipit placeat. Expedita molestiae, rerum fugit suscipit cupiditate facilis modi
-                voluptatem, laboriosam, officiis nobis dolorem quam ad eum eaque soluta!</p>
+        <h2 id="tentangsaya">Tentang saya</h2>
+        <div class="content-pertama">
+            <div class="subcontent-pertama">
+                <p>Saya seorang mahasiswa yang berkuliah di Institut Teknologi Sumatera dengan prodi Teknik Informatika.
+                    Saya memiliki hobbi sepak bola dan badminton.Saya memiliki impian untuk menjadi kaya dan saya senang
+                    dengan aktivitas programming seperti pengembangan web</p>
+            </div>
+
+            <section class="subcontent-kedua">
+                <figure>
+                    <iframe src="https://www.youtube.com/embed/cIIxPiCWId0">
+                    </iframe>
+                    <figcaption>Video pendek</figcaption>
+                </figure>
+            </section>
         </div>
 
-        <section>
-            <figure>
-                <video src="" autoplay controls muted width="500" height="300"></video>
-                <figcaption>Pikachu Intro</figcaption>
-            </figure>
-        </section>
-
+        <h2 id="pengalamankerja">Pengalaman kerja</h2>
         <div>
-            <h2 id="pengalamankerja">pengalaman kerja</h2>
             <table border="1">
                 <thead>
                     <tr>
-                        <th rowspan="2">no</th>
-                        <th rowspan="2">posisi</th>
-                        <th rowspan="2">perusahaan</th>
-                        <th colspan="2">waktu</th>
+                        <th rowspan="2">No</th>
+                        <th rowspan="2">Posisi</th>
+                        <th rowspan="2">Perusahaan</th>
+                        <th colspan="2">Waktu</th>
                     </tr>
                     <tr>
-                        <th>mulai</th>
-                        <th>selesai</th>
+                        <th>Mulai</th>
+                        <th>Selesai</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>lorem</td>
-                        <td>ipsum</td>
+                        <td>Direktur</td>
+                        <td>NingenGames</td>
+                        <td>123</td>
+                        <td>456</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>lorem</td>
-                        <td>isum</td>
+                        <td>Manajer</td>
+                        <td>Fiver</td>
+                        <td>456</td>
+                        <td>789</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <h2 id="hubungisaya">Hubungi saya</h2>
+        <div>
+            <form action="#">
+                <p>
+                    <label for="nama">Nama :</label>
+                    <input type="text" id="nama" name="nama">
+                </p>
+                <p>
+                    <label for="tanya">Sudah nonton film saya?</label>
+                    <br>
+                    <input type="radio" id="tanya" name="tanya">Sudah
+                    <input type="radio" id="tanya" name="tanya">Belum
+                </p>
+
+                <p>
+                    <label for="tanya">Apa coba?</label>
+                    <br>
+                    <input type="checkbox"> Ini
+                    <input type="checkbox"> Itu
+                    <input type="checkbox"> Anu
+                </p>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
     </main>
+    <footer>
+        Copyright by Krisna Saputra 😎
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
